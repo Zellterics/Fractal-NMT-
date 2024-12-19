@@ -5,6 +5,7 @@
 #include <complex>
 #include <thread>
 
+// This project uses stb_image.h for image processing. Check on https://github.com/nothings/stb
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 #include "handMade.h"
