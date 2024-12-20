@@ -75,8 +75,8 @@ int main() {
             threads.emplace_back(lambda);
             continue;
         }
-        threads[y%16].join();
-        threads[y%16] = std::thread(lambda);
+        threads[y%numThreads].join();
+        threads[y%numThreads] = std::thread(lambda);
     }
 
     for (auto& thread : threads) {
